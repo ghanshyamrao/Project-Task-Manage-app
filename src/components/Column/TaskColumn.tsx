@@ -125,10 +125,7 @@ const TaskColumn: React.FC<TaskColumnProps> = ({ colId, state }) => {
               <div className="dropdown">
                 <div
                   onClick={() => {
-                    setshowDropDown(true);
-                  }}
-                  onDoubleClick={() => {
-                    setshowDropDown(false);
+                    setshowDropDown(!showDropDown);
                   }}
                   style={{ display: open ? "none" : "" }}
                   className={actionVisiable ?"visiabale actionBtn dropbtn stateDrop":"hidden actionBtn dropbtn"}
@@ -143,7 +140,7 @@ const TaskColumn: React.FC<TaskColumnProps> = ({ colId, state }) => {
                     <button
                       className="AddRemove edit del"
                       onClick={() => {
-                        setOpen(true);
+                        setOpen(true)
                         setshowDropDown(false);
                       }}
                     >

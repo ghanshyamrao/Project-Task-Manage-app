@@ -23,23 +23,24 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  border-radius: 50px;
+  background: rgb(140, 140, 140);
   margin-right: 10px !important;
+  cursor: pointer !important;
+  visibility: hidden;
+}
+::-webkit-scrollbar-thumb:hover{
+  visibility: inherit;
   cursor: pointer;
 }
 ::-webkit-scrollbar-track {
   background-color: rgb(0, 0, 0);
+  visibility: hidden;
+
 }
 
 ::-webkit-scrollbar {
-  max-width: 10px;
+  max-width: 12px;
+  max-height: 10px !important;
   border-radius: 10px;
 }
 .timeStamp {

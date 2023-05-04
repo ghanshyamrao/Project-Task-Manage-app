@@ -9,6 +9,7 @@
  --W-COLOR:white;
  --C-G-LightColor:#00000091;
  background-color:var(--C-G-D);
+ --Button-primary-color: #0052CC;
  font-family:Arial, Helvetica, sans-serif;
 }
 body{

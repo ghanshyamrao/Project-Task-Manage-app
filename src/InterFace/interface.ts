@@ -54,3 +54,8 @@ export interface takss{
     moveTask: (taskId:number, title:string, state:string,time:string | number) => void;
   };
   
+export interface ButtonType {
+  buttonType:string
+  Icon:any
+  extendClass:string
+}  

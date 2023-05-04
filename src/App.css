@@ -35,14 +35,18 @@
   border-radius: 4px;
   font-size: 30px;
   border: 1px solid rgba(208, 208, 208, 0.17);
-  box-shadow: 1px 1px 10px rgb(229, 229, 229);
+  /* box-shadow: 1px 1px 10px rgb(229, 229, 229); */
   cursor: pointer;
-  color: #42526e;
+  color: rgb(54, 66, 86)1, 211, 211, 0.314;
 }
 
+.addColumn:hover{
+  background: #42526e57;
+}
+/* 
 .ColContainer{
  
-}
+} */
 
 .addIcon{
   margin: 0px;
@@ -54,11 +58,12 @@
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: center;
-  padding: 30px 150px;
+  justify-content: start;
+  padding: 0px 150px;
 }
 
 .Header{
-  padding: 30px 140px;
+  padding: 30px 160px;
+  padding-bottom: 10px;
   width: 100%;
 }

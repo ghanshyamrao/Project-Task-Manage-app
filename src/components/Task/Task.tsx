@@ -80,10 +80,7 @@ const Task: React.FC<TaskProps> = ({ title, status, taskId, time }) => {
           <div className="dropdown">
             <button
               onClick={() => {
-                setshowDropDown(true);
-              }}
-              onDoubleClick={() => {
-                setshowDropDown(false);
+                setshowDropDown(!showDropDown);
               }}
               style={{ display: open ? "none" : "" }}
               className={actionVisiable ?"visiabale actionBtn dropbtn":"hide actionBtn dropbtn"}
