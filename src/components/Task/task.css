@@ -1,0 +1,254 @@
+.task {
+  min-height: 5rem;
+  background: white;
+  color: #172b4d;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: grabbing;
+  box-shadow: 0 1px 1px rgba(23, 43, 77, 0.2), 0 0 1px rgba(23, 43, 77, 0.2);
+  transition: all 20ms ease-in;
+}
+body {
+  cursor: crosshair;
+}
+
+.task:hover {
+  background: rgba(252, 252, 252, 0.931);
+  color: #172b4d;
+  transition: all 25ms ease-in;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 50px;
+  margin-right: 10px !important;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  max-width: 10px;
+  border-radius: 10px;
+}
+.timeStamp {
+  font-size: 11px;
+  color: #767676;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.bottomWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  font-weight: 600;
+  background: var(--C-G-L);
+  padding: 8px;
+  border-radius: 50px;
+  float: right;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.rolesLabal {
+  color: #403294;
+  background: #4132941d !important;
+  display: flex;
+  font-size: 11px !important;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  font-weight: 600;
+  background: var(--C-G-L);
+  padding: 2px 6px;
+  border-radius: 4px;
+  float: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.rolesLabalContainer {
+  display: flex;
+  float: left;
+  margin: 10px 0px;
+}
+
+.PLANNED {
+  background: var(--COLOR-PLANNED);
+}
+
+.ONGOING {
+  background: var(--COLOR-ONGOING);
+}
+
+.TESTING {
+  background: var(--COLOR-TESTING);
+}
+
+.DONE {
+  background: var(--COLOR-DONE);
+}
+
+.taskTitle {
+  width: 100%;
+  min-height: 5vh;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.actionBtn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  display: flex;
+  height: 1rem;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  display: block;
+}
+.actionBtn:hover {
+  background-color: var(--C-G-L);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}
+.actionBtn > p {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-top: -18px;
+  height: fit-content;
+}
+
+.taskHeaderAction {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.del {
+  background-color: lightcoral;
+  padding: 6px auto !important;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px !important;
+}
+
+.edit {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+}
+
+.taskActionBtn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  height: auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  height: fit-content;
+}
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  display: flex;
+  height: 1rem;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+/* .dropbtn {
+  background-color: transparent;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+} */
+.dropdown-content {
+  /* display: none; */
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 8rem;
+  padding: 10px 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 100;
+  max-width: auto;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  /* background-color: #5e5e5e00; */
+  color: rgb(0, 0, 0);
+}
+
+.labal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.taskNumber {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 6px;
+  color: var(--ds-text-subtle, #7a869a);
+  /* margin: 0px 4px; */
+}
+
+.visiabale {
+}
+.hide {
+  background-color: white !important;
+  color: white;
+}
+
+.checkLable {
+  padding: 0px;
+  margin: 0;
+}
+
+.labalContainer {
+  display: flex;
+}
+
+.AlertLabal{
+position: absolute;
+width: 20rem;
+top: 0px;
+}

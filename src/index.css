@@ -1,0 +1,16 @@
+:root {
+ --C-G:#333333;
+ --C-G-D: #f4f5f7;
+ --C-G-L:#CCCCCC;
+ --COLOR-PLANNED:#4ac665;
+ --COLOR-ONGOING:#98c1d9;
+ --COLOR-DONE:#ff789a;
+ --COLOR-TESTING:#e4df66;
+ --W-COLOR:white;
+ --C-G-LightColor:#00000091;
+ background-color:var(--C-G-D);
+ font-family:Arial, Helvetica, sans-serif;
+}
+body{
+ margin: 0;
+}
